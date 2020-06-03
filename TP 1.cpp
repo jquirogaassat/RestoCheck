@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// este proyecto esta realizado sin vectores, el proximo lo subire con los mismos en reemplazo de los switch
 int main()
 {
 	
@@ -36,8 +37,8 @@ int main()
 	
 	switch(nmozo)
 	{
-		case 1: mozo1 = mozo1 + personas;
-				totmoz1 = totmoz1 + importefactura;
+		case 1: mozo1 = mozo1 + personas;// cant de personas atendidas
+				totmoz1 = totmoz1 + importefactura;// total cobrado
 				if(mozo1>max)
 				{
 					max = mozo1;
@@ -92,7 +93,7 @@ int main()
 		
 	switch(nmesa)
 	{
-		case 1: mesa1++;
+		case 1: mesa1++;// veces que se ocupo la mesa
 				if(mesa1>mesamax)
 				{
 					mesamax = mesa1;
@@ -192,7 +193,7 @@ int main()
 	}
 	}
 	
-	por1 = totmoz1 * 100 / totalcobrado;
+	por1 = totmoz1 * 100 / totalcobrado;// porcentaje cobrado 
 	por2 = totmoz2 * 100 / totalcobrado;
 	por3 = totmoz3 * 100 / totalcobrado;
 	por4 = totmoz4 * 100 / totalcobrado;
